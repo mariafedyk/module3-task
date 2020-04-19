@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Courier';
+}
+.container{
+	width: 95%;
+	margin: auto;
+}
+.col{
+	width: 30%;
+	float: left;
+	border: 1px solid black;
+	position: relative;
+	margin: 0 1.66%;
+	background-color: #ffed8a;
+}
+h1{
+	font-size: 175%;
+	text-align: center;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.col > h2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 125%;
+	display: block;
+	border: 1px solid black;
+	margin: 0;
+	padding: 7px;
+}
+.col > p{
+	font-size: 100%;
+	margin-top: 50px;
+    padding: 0 14px;
+}
+.col:first-child > h2{
+	background-color: #ff8cb4;
+}
+.col:nth-child(2) > h2{
+	background-color: #f51664;
+	color: #fff;
+}
+.col:last-child > h2{
+	background-color: #6b16f5;
+	color: #fff;
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.col:first-child, .col:nth-child(2){
+		width: 48%;
+		margin-bottom: 28px;
+	}
+	.col:first-child{
+		margin-left: 0;
+    	margin-right: 2.3%;
+	}
+	.col:nth-child(2){
+		margin-right: 0;
+	}
+	.col:last-child{
+		width: 100%;
+		margin: 0;
+	}
+}
+@media(max-width: 767px){
+	.col{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 28px;
+	}
+}
